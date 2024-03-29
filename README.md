@@ -6,7 +6,8 @@ The repository contains all code based on an MVVM architecture pattern to organi
 
 ##  🤔 Technologies and Features I will use:
 
-##App features:
+##App External Packages:
+* SDWebImageSwiftUI -> is a SwiftUI image loading framework, which based on SDWebImage.
 * SwiftfulRouting -> Is a native, declarative framework that enables programmatic navigation in SwiftUI applications.
 * SwiftfulUI -> A library of reusable SwiftUI components that are missing from the SwiftUI framework.
 
