@@ -19,6 +19,9 @@
 		2DD93B9D2BB6E83300310FB9 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DD93B9C2BB6E83300310FB9 /* User.swift */; };
 		2DD93BA02BB6EA5600310FB9 /* SwiftfulUI in Frameworks */ = {isa = PBXBuildFile; productRef = 2DD93B9F2BB6EA5600310FB9 /* SwiftfulUI */; };
 		2DD93BA32BB6EA8400310FB9 /* SwiftfulRouting in Frameworks */ = {isa = PBXBuildFile; productRef = 2DD93BA22BB6EA8400310FB9 /* SwiftfulRouting */; };
+		2DD93BA82BB6EF6700310FB9 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DD93BA72BB6EF6700310FB9 /* HomeView.swift */; };
+		2DD93BAA2BB6F1CB00310FB9 /* CategoryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DD93BA92BB6F1CB00310FB9 /* CategoryCell.swift */; };
+		2DD93BAD2BB6F37200310FB9 /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DD93BAC2BB6F37200310FB9 /* Category.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +35,9 @@
 		2DD93B982BB6E5EE00310FB9 /* DataBaseHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataBaseHelper.swift; sourceTree = "<group>"; };
 		2DD93B9A2BB6E81D00310FB9 /* Product.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Product.swift; sourceTree = "<group>"; };
 		2DD93B9C2BB6E83300310FB9 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		2DD93BA72BB6EF6700310FB9 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		2DD93BA92BB6F1CB00310FB9 /* CategoryCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryCell.swift; sourceTree = "<group>"; };
+		2DD93BAC2BB6F37200310FB9 /* Category.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Category.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,6 +75,7 @@
 			children = (
 				2DD93B822BB6DC6600310FB9 /* SpotifyCloneApp.swift */,
 				2DD93B842BB6DC6600310FB9 /* ContentView.swift */,
+				2DD93BA42BB6EF2000310FB9 /* Application */,
 				2DD93B932BB6DD1200310FB9 /* Shared */,
 				2DD93B862BB6DC6700310FB9 /* Assets.xcassets */,
 				2DD93B882BB6DC6700310FB9 /* Preview Content */,
@@ -94,6 +101,40 @@
 				2DD93B962BB6DDCE00310FB9 /* Constants.swift */,
 			);
 			path = Shared;
+			sourceTree = "<group>";
+		};
+		2DD93BA42BB6EF2000310FB9 /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				2DD93BAB2BB6F36400310FB9 /* Models */,
+				2DD93BA62BB6EF4700310FB9 /* Components */,
+				2DD93BA52BB6EF4300310FB9 /* Core */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		2DD93BA52BB6EF4300310FB9 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				2DD93BA72BB6EF6700310FB9 /* HomeView.swift */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		2DD93BA62BB6EF4700310FB9 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				2DD93BA92BB6F1CB00310FB9 /* CategoryCell.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		2DD93BAB2BB6F36400310FB9 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				2DD93BAC2BB6F37200310FB9 /* Category.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -177,10 +218,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				2DD93B952BB6DD3100310FB9 /* ImageLoaderView.swift in Sources */,
+				2DD93BAD2BB6F37200310FB9 /* Category.swift in Sources */,
 				2DD93B852BB6DC6600310FB9 /* ContentView.swift in Sources */,
 				2DD93B832BB6DC6600310FB9 /* SpotifyCloneApp.swift in Sources */,
 				2DD93B972BB6DDCE00310FB9 /* Constants.swift in Sources */,
 				2DD93B992BB6E5EE00310FB9 /* DataBaseHelper.swift in Sources */,
+				2DD93BAA2BB6F1CB00310FB9 /* CategoryCell.swift in Sources */,
+				2DD93BA82BB6EF6700310FB9 /* HomeView.swift in Sources */,
 				2DD93B9B2BB6E81D00310FB9 /* Product.swift in Sources */,
 				2DD93B9D2BB6E83300310FB9 /* User.swift in Sources */,
 			);
