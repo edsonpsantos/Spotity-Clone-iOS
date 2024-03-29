@@ -23,6 +23,7 @@
 		2DD93BAA2BB6F1CB00310FB9 /* CategoryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DD93BA92BB6F1CB00310FB9 /* CategoryCell.swift */; };
 		2DD93BAD2BB6F37200310FB9 /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DD93BAC2BB6F37200310FB9 /* Category.swift */; };
 		2DD93BAF2BB6FA9D00310FB9 /* RecentsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DD93BAE2BB6FA9D00310FB9 /* RecentsCell.swift */; };
+		2DD93BB12BB7009700310FB9 /* NewReleaseCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DD93BB02BB7009700310FB9 /* NewReleaseCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,6 +41,7 @@
 		2DD93BA92BB6F1CB00310FB9 /* CategoryCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryCell.swift; sourceTree = "<group>"; };
 		2DD93BAC2BB6F37200310FB9 /* Category.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Category.swift; sourceTree = "<group>"; };
 		2DD93BAE2BB6FA9D00310FB9 /* RecentsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecentsCell.swift; sourceTree = "<group>"; };
+		2DD93BB02BB7009700310FB9 /* NewReleaseCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewReleaseCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -128,6 +130,7 @@
 			children = (
 				2DD93BA92BB6F1CB00310FB9 /* CategoryCell.swift */,
 				2DD93BAE2BB6FA9D00310FB9 /* RecentsCell.swift */,
+				2DD93BB02BB7009700310FB9 /* NewReleaseCell.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -222,6 +225,7 @@
 			files = (
 				2DD93B952BB6DD3100310FB9 /* ImageLoaderView.swift in Sources */,
 				2DD93BAD2BB6F37200310FB9 /* Category.swift in Sources */,
+				2DD93BB12BB7009700310FB9 /* NewReleaseCell.swift in Sources */,
 				2DD93B852BB6DC6600310FB9 /* ContentView.swift in Sources */,
 				2DD93B832BB6DC6600310FB9 /* SpotifyCloneApp.swift in Sources */,
 				2DD93B972BB6DDCE00310FB9 /* Constants.swift in Sources */,

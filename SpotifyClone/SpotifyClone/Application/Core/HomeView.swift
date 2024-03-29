@@ -6,11 +6,13 @@
 //
 
 import SwiftUI
+import SwiftfulUI
 
 struct HomeView: View {
     
     @State private var currentUser: User? = nil
     @State private var selectedCategory: Category? = nil
+    @State private var products: [Product] = []
     
     var body: some View {
         ZStack{
@@ -18,8 +20,20 @@ struct HomeView: View {
             
             ScrollView(.vertical) {
                 
-                LazyVStack(spacing: 1, pinnedViews: [.sectionHeaders], content: {
+                LazyVStack(spacing: 1,
+                           pinnedViews: [.sectionHeaders],
+                           content: {
                     Section {
+                        VStack(spacing: 16){
+                            recentsSection
+                            
+                            
+                            if let product = products.first{
+                                newReleaseSection(product: product)
+                            }
+                        }
+                        .padding(.horizontal, 16)
+                        
                         ForEach(0..<20) { _ in
                             Rectangle()
                                 .fill(.red)
@@ -43,6 +57,7 @@ struct HomeView: View {
     private func getData() async {
         do{
             currentUser = try await DataBaseHelper().getUsers().first
+            products = try await Array(DataBaseHelper().getProduct().prefix(upTo: 8))
         }
         catch{}
     }
@@ -64,7 +79,8 @@ struct HomeView: View {
                 HStack(spacing: 8){
                     ForEach(Category.allCases, id: \.self) { category in
                         CategoryCell(title: category.rawValue.capitalized,
-                                     isSelected: category == selectedCategory)
+                                     isSelected: category == selectedCategory
+                        )
                         .onTapGesture {
                             selectedCategory = category
                         }
@@ -77,6 +93,27 @@ struct HomeView: View {
         .padding(.vertical, 24)
         .padding(.leading, 8)
         .background(.spotifyBlack)
+    }
+    
+    private var recentsSection: some View {
+        NonLazyVGrid(columns: 2, alignment: .center, spacing: 10, items: products) { product in
+            if let product {
+                RecentsCell(imageName: product.firstImage,
+                            title: product.title)
+            }
+        }
+    }
+    
+    private func newReleaseSection(product: Product) -> some View{
+        NewReleaseCell(
+            imageName: product.firstImage,
+            headline: product.brand,
+            subheadline: product.category,
+            title: product.title,
+            subtitle: product.description,
+            onAddToPlayListPressed: nil,
+            onPlayPressed: nil
+        )
     }
 }
 
