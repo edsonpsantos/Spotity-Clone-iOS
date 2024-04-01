@@ -24,4 +24,8 @@ The repository contains all code based on an MVVM architecture pattern to organi
 As soon as I finish the project
 
 
+https://github.com/edsonpsantos/Spotity-Clone-iOS/assets/24628289/024fdd1f-884c-4651-9f7b-0c5adb14297c
+
+
+
 🙏🏽 Thanks for your attention! 
