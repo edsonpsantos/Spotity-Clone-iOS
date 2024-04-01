@@ -21,11 +21,11 @@ The repository contains all code based on an MVVM architecture pattern to organi
 * Good practices ( Save coding -> if let and guard statements to avoid crashes )
 
 ##  📱 App screens:
-As soon as I finish the project
 
+![Home Screen](https://github.com/edsonpsantos/images/blob/main/SpotifyUIClone/HomeView.png)
+![List Screen](https://github.com/edsonpsantos/images/blob/main/SpotifyUIClone/ListView.png)
+![Detail Screen](https://github.com/edsonpsantos/images/blob/main/SpotifyUIClone/DetailView.png)
 
 https://github.com/edsonpsantos/Spotity-Clone-iOS/assets/24628289/024fdd1f-884c-4651-9f7b-0c5adb14297c
-
-
 
 🙏🏽 Thanks for your attention! 
