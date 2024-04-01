@@ -6,9 +6,11 @@
 //
 
 import SwiftUI
-import SwiftfulUI
+import SwiftfulRouting
 
 struct HomeView: View {
+    
+    @Environment(\.router) var router
     
     @State private var currentUser: User? = nil
     @State private var selectedCategory: Category? = nil
@@ -53,9 +55,10 @@ struct HomeView: View {
     }
     
     private func getData() async {
+        guard products.isEmpty else {return}
         do{
             currentUser = try await DataBaseHelper().getUsers().first
-            products = try await Array(DataBaseHelper().getProduct().prefix(upTo: 8))
+            products = try await Array(DataBaseHelper().getProducts().prefix(upTo: 8))
             
             var rows: [ProductRow] = []
             
@@ -78,6 +81,7 @@ struct HomeView: View {
                         .background(.spotifyWhite)
                         .clipShape(Circle())
                         .onTapGesture {
+                            router.dismissScreen()
                         }
                 }
             }
@@ -110,9 +114,17 @@ struct HomeView: View {
                             title: product.title
                 )
                 .asButton(.press) {
-                    
+                    goToPlayListView(product: product)
                 }
             }
+        }
+    }
+    
+    private func goToPlayListView(product: Product){
+        guard let currentUser  else {return}
+        
+        router.showScreen(.push){_ in
+            PlaylistView(product: product, user: currentUser)
         }
     }
     
@@ -123,8 +135,12 @@ struct HomeView: View {
             subheadline: product.category,
             title: product.title,
             subtitle: product.description,
-            onAddToPlayListPressed: nil,
-            onPlayPressed: nil
+            onAddToPlayListPressed: {
+                
+            },
+            onPlayPressed:  {
+                goToPlayListView(product: product)
+            }
         )
     }
     
@@ -146,7 +162,7 @@ struct HomeView: View {
                                               title: product.title
                             )
                             .asButton(.press) {
-                                
+                                goToPlayListView(product: product)
                             }
                         }
                     }
@@ -159,5 +175,7 @@ struct HomeView: View {
 }
 
 #Preview {
-    HomeView()
+    RouterView{_ in
+        HomeView()
+    }
 }

@@ -1,5 +1,5 @@
 {
-  "originHash" : "0ee9803561ba3142310adbbc45bfcbf86a140a3dca5571d0ec4467d2af16ce6f",
+  "originHash" : "353977c6395d1467efa05a3457d6e378df19ad00f7c8032a82515d1971da2a53",
   "pins" : [
     {
       "identity" : "sdwebimage",
@@ -35,15 +35,6 @@
       "state" : {
         "revision" : "1efdf6a43fdb3d491dbf6a6068dc79630e9d82e9",
         "version" : "5.3.2"
-      }
-    },
-    {
-      "identity" : "swiftfului",
-      "kind" : "remoteSourceControl",
-      "location" : "https://github.com/SwiftfulThinking/SwiftfulUI.git",
-      "state" : {
-        "revision" : "7e6e2d1c29d05e1519f2f5a2ce6012fe4e4dfa19",
-        "version" : "1.2.0"
       }
     }
   ],
