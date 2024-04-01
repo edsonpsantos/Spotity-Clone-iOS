@@ -141,7 +141,7 @@ struct HomeView: View {
                 ScrollView(.horizontal){
                     HStack(alignment: .top, spacing: 16) {
                         ForEach(row.products){ product in
-                            ImageTitleRowCell(imageSize: 120,
+                            ImageTitleRowCell(imageSize: 130,
                                               imageName: product.firstImage,
                                               title: product.title
                             )
