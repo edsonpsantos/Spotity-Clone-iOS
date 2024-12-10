@@ -24,9 +24,9 @@ The repository contains all code based on an MVVM architecture pattern to organi
 
 ##  📱 App screens:
 
-![Home Screen](https://github.com/edsonpsantos/images/blob/main/SpotifyUIClone/HomeView.png)
-![List Screen](https://github.com/edsonpsantos/images/blob/main/SpotifyUIClone/ListView.png)
-![Detail Screen](https://github.com/edsonpsantos/images/blob/main/SpotifyUIClone/DetailView.png)
+![Home Screen](https://github.com/edsonpsantos/images/blob/main/ios_images/SpotifyUIClone/HomeView.png)
+![List Screen](https://github.com/edsonpsantos/images/blob/main/ios_images/SpotifyUIClone/ListView.png)
+![Detail Screen](https://github.com/edsonpsantos/images/blob/main/ios_images/SpotifyUIClone/DetailView.png)
 
 https://github.com/edsonpsantos/Spotity-Clone-iOS/assets/24628289/024fdd1f-884c-4651-9f7b-0c5adb14297c
 
